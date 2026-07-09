@@ -20,20 +20,24 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 35vw;
+    width: 30vw;
     color: white;
     font-family: Norsebold;
+    position: relative;
 }
 
 .banner{
     width: inherit;
-    height: 5rem;
+    height: 1.5em;
     display: flex;
     flex-direction: row;
+    flex-shrink: 1;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 4.7em;
     padding: 10px 0 10px 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 160px;
 }
 
 .header-img{
@@ -41,10 +45,27 @@ body{
     height: auto;
 }
 
-.header.txt{
+.header-txt{
     align-self: center;
+    
 }
 
 .right{
+    height: 100vh;
+    width: 70vw;
+    position: relative;
+}
 
+.top-blockquote{
+    height: 35vh;
+    width: 70vw;
+    display: flex;
+    align-items: flex-end;
+    font-size: 24px;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-bottom: 24px;
+    background-color: #f9fafb;
+    position: absolute;
 }
