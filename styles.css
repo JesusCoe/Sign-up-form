@@ -81,6 +81,9 @@ body{
     display: flex;
     flex-direction: column;
     padding-left: 50px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35);
 }
 
 .middle-txt{
@@ -127,8 +130,42 @@ input:user-invalid{
     outline: none;
 }
 
+input:user-valid{
+    border-color: greenyellow;
+    box-shadow: 0 0 0 3px rgba(35, 240, 38, 0.2);
+}
+
 .bottom{
     height: 25vh;
     width: inherit;
     background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    padding-left: 50px;
+    gap: 15px;
+}
+
+.acc-btn{
+    background-color: #596D48;
+    border: none;
+    color: whitesmoke;
+    font-size: 1.1em;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+}
+
+.bottom-txt{
+    font-size: 1.1rem   ;
+}
+
+button{
+    border-radius: 6px;
+    padding: 12px 36px 12px 36px;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
 }
